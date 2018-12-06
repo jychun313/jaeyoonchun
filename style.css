@@ -1,0 +1,100 @@
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100%;   
+}
+
+.img-UoE {
+    max-width: 100%;
+}
+
+.body {
+    font-family: "Lato", sans-serif;
+}
+
+div.UoE {
+    max-width: 280px;
+}
+
+div.profile {
+    max-width: 180px;
+}
+
+.fit {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.fit-long {
+    max-width: 12.5%;
+    max-height: 12.5%;
+}
+
+.fit-long2 {
+    max-width: 14%;
+    max-height: 14%;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 22px; /* Increased text to enable scrolling */
+    font-size: 100%;
+    padding: 0px 10px;
+}
+
+.profile p {
+    margin: 0px;
+    float: none;
+    object-fit: fill;
+    position: relative;
+    left: 210px;
+    top: -190px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #C0C0C0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

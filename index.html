@@ -5,141 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work in Progress | Jae Yoon Chun</title>
     <meta name="author" content="Jae Yoon Chun">
-<!--    <meta http-equiv="refresh" content="60">-->
-    <style>
-        .h1 {
-            font-size: "20em"
-        }
-        
-        .img-circle {
-          border-radius: 50%;
-        }
-        
-        .body {
-            font-family: "Lato", sans-serif;
-        }
-        
-        .entry-content {
-            font-size: "15vw"
-        }
-        
-        /* unvisited link */
-        a:link {
-            color: blue;
-        }
-
-        /* visited link */
-        a:visited {
-            color: blue;
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: blue;
-        }
-
-        /* selected link */
-        a:active {
-            color: blue;
-        }
-        
-        .fit {
-        max-width: 30%;
-        max-height: 30%;
-        }
-        
-        .fit-long {
-        max-width: 12.5%;
-        max-height: 12.5%;
-        }
-        
-        .fit-long2 {
-        max-width: 14%;
-        max-height: 14%;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #f1f1f1;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
-
-        .sidenav a:hover {
-            color: #C0C0C0;
-        }
-
-        .main {
-            margin-left: 160px; /* Same as the width of the sidenav */
-            font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
-
+                
 <body class="page">
-
-    <div class="sidenav">
-        <a href="#CV">CV</a>
-<!--
-        toDo
-        <a href="#Research">Research</a>
-        <a href="#CV">University of Edinburgh</a>
-        <a href="#trips">Trips</a>
--->
-    </div>
-        
-    <div id="content" class="main">
-        <main id="main" class="site-main" role="main">
-            <article id="post-1" class="post post-1 page type-page status-publish hentry">
-                <header class="entry-header">
-                    <h1 class=entry-title>Jae Yoon Chun</h1>
+    <div class="main">
+        <main>
+            <article>
+                <div class="sidenav">
+                <a href="#CV">CV</a>
+                </div>
+                
+                <header>
+                    <h1>Jae Yoon Chun</h1>
                 </header>
-                <div class="entry-content">
-                    <p>
+                
+                <div class="profile">
+                    <div>
                         <strong>
-                            <img class="img-circle" src="img/jaeyoonchun1.jpg" style="width: 200px">
+                        <img class="img-circle" src="img/jaeyoonchun1.jpg" style="width: 100%">
                         </strong>
-                    </p>
+                    </div>
                     <p>
                         <a href="https://www.linkedin.com/in/jaeyoonchun/" target="_blank">LinkedIn</a>
-                        <br>
                         <a href="mailto:someone@example.com?Subject=Hello%20Jae Yoon" target="_top">jaeychun@gmail.com</a>
-                        <br>
-<!--
-                        toDo
-                        "Resume ["<a href="">pdf</a>"]"
--->
-                    </p>
-<!--
-                    <hr>
-                    <h2 style="text-align: center;">News</h2>
-                    <hr>
-                    <ul>
-                        <li><em>to be updated...</em></li>
-                    </ul>
--->
-                    <hr>
+                    <br>
+                </div>
+                
+                <!-- Research Interests Section -->
+                <hr>
                     <h2 style="text-align: center;">Research Interests</h2>
-                    <hr>
+                <hr>
+                    <div class="subjects">
                     Theoretical Computer Science
                     <ul>
                         <li>Cryptography</li>
@@ -147,83 +44,96 @@
                         <li>Natural Language Processing</li>
                     </ul>
                     Human-Computer Interaction
-<!--
-                    toDO
-                    <hr>
-                    <h2 style="text-align: center;">Recent Projects</h2>
-                    <hr>
-                    <ul>
-                        <li><em>to be updated...</em></li>
-                    </ul>
--->
-                    <hr>
+                    </div>
+                
+                <!-- Academic Projects Section -->
+                <hr>
                     <h2 style="text-align: center;">Academic Projects</h2>
-                    <hr>
-                    <ul>
-                        <li>"Sturm-Liouville Problem Report [<a href="pdf/The%20Sturm-Liouville-Problem%20Report.pdf" target="_blank">pdf</a>]"</li>
-                        <li>"Sturm-Liouville Problem Presentation [<a href="pdf/The%20Sturm-Liouville-Problem%20Presentation.pdf" target="_blank">pdf</a>]"</li>
-                        <li>"Mathematical Programming Term Project"</li>
-                        <li>"Honours Algebra Group Project Presentation [<a href="pdf/LU%20Factorization%20-%20Computing%20the%20determinants.pdf" target="_blank">pdf</a>]"</li>
-                        <li>"Linear Programming, Modelling, and Solutions Case Study"</li>
-                    </ul>
-                    <hr>
+                <hr>
+                    <div class="projects">
+                        <ul>
+                            <li>"Sturm-Liouville Problem Report [<a href="pdf/The%20Sturm-Liouville-Problem%20Report.pdf" target="_blank">pdf</a>]"</li>
+                            <li>"Sturm-Liouville Problem Presentation [<a href="pdf/The%20Sturm-Liouville-Problem%20Presentation.pdf" target="_blank">pdf</a>]"</li>
+                            <li>"Mathematical Programming Term Project"</li>
+                            <li>"Honours Algebra Group Project Presentation [<a href="pdf/LU%20Factorization%20-%20Computing%20the%20determinants.pdf" target="_blank">pdf</a>]"</li>
+                            <li>"Linear Programming, Modelling, and Solutions Case Study"</li>
+                        </ul>
+                    </div>
+                
+                <!-- Education Section -->
+                <hr>
                     <h2 style="text-align: center;">Education</h2>
+                <hr>
+                    <!-- The University of Edinburgh -->
+                    <div class="UoE">
+                        <div>
+                            <img class="img-UoE" src="img/UoE_Stacked%20Logo_CMYK_v1_160215.png" style="width: 400px">
+                        </div>
+                        <div>
+                            <p>
+                                <strong>
+                                <a href="https://www.ed.ac.uk/" target="_blank"><span style="text-decoration: underline;color: #000000;">The University of Edinburgh</span></a>
+                            <br>
+                                <a href="https://www.maths.ed.ac.uk/" target="_blank"><span style="text-decoration: underline;color: #000000;">School of Mathematics</span></a>
+                            <br>
+                                <a href="https://www.ed.ac.uk/science-engineering" target="_blank"><span style="text-decoration: underline;color: #000000;">College of Science and Engineering</span></a>
+                                </strong>
+                            </p>
+                            <p>Bachelor of Science with Honours Mathematics, September 2010 - June 2016</p>
+                            <p>
+                                I am greatly fortunate to have Professor <a href="https://www.maths.ed.ac.uk/school-of-mathematics/people?person=66" target="_blank">Nikolaos Bournaveas</a> as my supervisor and Professor <a href="https://www.maths.ed.ac.uk/~aram/" target="_blank">Aram Karakhanyan</a> as my final year project advisor.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- TASIS Engaland -->
                     <hr>
-                    <p>
-                        <p>
-                            <img src="img/UoE_Stacked%20Logo_CMYK_v1_160215.png" style="width: 400px">
-                        </p>
-                        <p>
-                            <strong>
-                            <a href="https://www.ed.ac.uk/" target="_blank"><span style="text-decoration: underline;color: #000000;">The University of Edinburgh</span></a>
-                        <br>
-                            <a href="https://www.maths.ed.ac.uk/" target="_blank"><span style="text-decoration: underline;color: #000000;">School of Mathematics</span></a>
-                        <br>
-                            <a href="https://www.ed.ac.uk/science-engineering" target="_blank"><span style="text-decoration: underline;color: #000000;">College of Science and Engineering</span></a>
-                            </strong>
-                        </p>
-                        <p>Bachelor of Science with Honours Mathematics, September 2010 - June 2016</p>
-                        <p>
-                            I am greatly fortunate to have Professor <a href="https://www.maths.ed.ac.uk/school-of-mathematics/people?person=66" target="_blank">Nikolaos Bournaveas</a> as my supervisor and Professor <a href="https://www.maths.ed.ac.uk/~aram/" target="_blank">Aram Karakhanyan</a> as my final year project advisor.
-                        </p>
-                    </p>
-                    <hr>
-                    <p>
-                        <p>
+                    <div class="TASIS">
+                        <div>
                             <strong>
                             <a href="https://www.tasisengland.org/" target="_blank"><span style="text-decoration: underline;color: #000000;">The American School in England (TASIS England)</span></a>
                             </strong>
-                        </p>
-                        <p>College Preparatory Diploma (High School Diploma), August 2006 - June 2010</p>
-                        <p>
+                        </div>
+                        <div>
+                            <p>College Preparatory Diploma (High School Diploma), August 2006 - June 2010</p>
+                            <p>
                             UCAS: 340 points <br> AP Scholar with Distinction 2010
                             <br>
                             (AP Calculus AB, AP Calculus BC, AP Chemistry)
-                        </p>
-                        <br>
-                    </p>
-                    <hr>
-                    <h2 style="text-align: center;">Teaching Experience</h2>
-                    <hr>
+                            </p>
+                        </div>
+                    </div>
+        
+                <!-- Teaching Experience Section -->
+                <hr>
+                <h2 style="text-align: center;">Teaching Experience</h2>
+                <hr>
+                <div class="teaching">
                     <ul>
                         <li>"IOTA - Structure and Validation Method [<a href="pdf/IOTA.pdf" target="_blank">pdf</a>]"</li>
                         <li>"Practical Byzantine Fault Tolerance [<a href="pdf/PBFT_Mechanism.pdf" target="_blank">pdf</a>]"</li>
                         <li>"Cryptocurrency - Cryptography [<a href="pdf/Cryptocurrency.pdf" target="_blank">pdf</a>]"</li>
                         <li>"Machine Learning - Reinforcement Learning [<a href="pdf/Machine_Learning_-_Reinforcement_Learning.pdf" target="_blank">pdf</a>]"</li>
                     </ul>
-                    <hr>
+                </div>
+        
+                <!-- Work Experience Section -->
+                <hr>
                     <h2 style="text-align: center;">Work Experience</h2>
+                    
+                    <!-- Finotek -->
                     <hr>
-                    <p><strong>Software Engineer</strong> at <strong><a href="https://finotek.co.kr/eng/" target="_blank"><span style="color:#3b5998;">Finotek</span></a></strong><br>April 2017 – November 2018</p>
-                        <ul>
-                        <img src="img/liveen1.png" class="fit-long">
-                        <img src="img/liveen2.png" class="fit-long2">
-                        <li>Explaining Blockchain-based social media platform and participating in Blockchain conference</li>
-                        <img src="img/finotek1.png" class="fit">
-                        <li>Explaining Machine Learning chatbot in Myanmar</li>
-                        <img src="img/finotek2.png" class="fit">
-                        <li>Winning Customer Service Digitization award at Asia Start-up Challenge in Hong Kong</li>
-                        </ul>
+                        <div class="finotek">
+                            <p><strong>Software Engineer</strong> at <strong><a href="https://finotek.co.kr/eng/" target="_blank"><span style="color:#3b5998;">Finotek</span></a></strong><br>April 2017 – November 2018</p>
+                                <ul>
+                                <img src="img/liveen1.png" class="fit-long">
+                                <img src="img/liveen2.png" class="fit-long2">
+                                <li>Explaining Blockchain-based social media platform and participating in Blockchain conference</li><br>
+                                <img src="img/finotek1.png" class="fit">
+                                <li>Explaining Machine Learning chatbot in Myanmar</li><br>
+                                <img src="img/finotek2.png" class="fit">
+                                <li>Winning Customer Service Digitization award at Asia Start-up Challenge in Hong Kong</li>
+                                </ul>
 <!--
                         toDo
                         <ul>
@@ -231,40 +141,55 @@
                         <li>Build recommender behavior system using libraries (Matplotlib, NumPy, Pandas, Spark) to sort the users' frequent behavior</li>
                         </ul>
 -->
+                        </div>
+                    
+                    <!-- PwC Korea -->
                     <hr>
-                    <p><strong>Risk Assurance Intern</strong> at <strong><a href="https://www.pwc.com/kr/en.html" target="_blank"><span style="color:#3b5998;">PwC Korea</span></a></strong><br>January 2017 – February 2017</p>
+                    <div class="pwc">
+                        <p><strong>Risk Assurance Intern</strong> at <strong><a href="https://www.pwc.com/kr/en.html" target="_blank"><span style="color:#3b5998;">PwC Korea</span></a></strong><br>January 2017 – February 2017</p>
                         <ul>
-                        <img src="img/pwc1.png" class="fit">
-                        <img src="img/pwc2.png" class="fit">
-                        <li>Successul completion of internship!</li>
+                            <img src="img/pwc1.png" class="fit">
+                            <img src="img/pwc2.png" class="fit">
+                            <li>Successul completion of internship!</li>
                         </ul>
+                    </div>
+                    
+                    <!-- vtw -->
                     <hr>
-                    <p><strong>Research Assistant</strong> at <strong><a href="http://www.vtw.co.kr" target="_blank"><span style="color:#3b5998;">vtw</span></a></strong><br>October 2016 – December 2016</p>
+                    <div class="vtw">
+                        <p><strong>Research Assistant</strong> at <strong><a href="http://www.vtw.co.kr" target="_blank"><span style="color:#3b5998;">vtw</span></a></strong><br>October 2016 – December 2016</p>
+                    </div>
+                    
+                    <!-- 2014 Seoul ICM -->
                     <hr>
-                    <p><strong>Volunteer</strong> at <strong><a href="http://www.icm2014.org" target="_blank"><span style="color:#3b5998;">SEOUL ICM 2014 International Congress of Mathematicians</span></a></strong><br>June 2014 – August 2014</p>
+                    <div class="icm">
+                        <p><strong>Volunteer</strong> at <strong><a href="http://www.icm2014.org" target="_blank"><span style="color:#3b5998;">SEOUL ICM 2014 International Congress of Mathematicians</span></a></strong><br>June 2014 – August 2014</p>
                         <ul>
                         <img src="img/ICM1.png" class="fit">
                         <img src="img/ICM2.png" class="fit">
-                        <li>2014 International Congress of Mathematicians Public and Media Relations Award, awarded by Seoul ICM 2014 Chairman of Public and Media Relations</li>
+                        <li>2014 International Congress of Mathematicians Public and Media Relations Award, awarded by Seoul ICM 2014 Chairman of Public and Media Relations</li><br>
                         <img src="img/Professor%20C%C3%A9dric%20Villani.png" class="fit">
                         <img src="img/Professor%20Manjul%20Bhargava.png" class="fit-long">
                         <li>It was an honor to meet <a href="https://en.wikipedia.org/wiki/Cédric_Villani" target="_blank">Professor Cédric Villani</a> and <a href="https://en.wikipedia.org/wiki/Manjul_Bhargava" target="_blank">Professor Manjul Bhargava</a></li>
                         </ul>
-                    <hr>
+                    </div>
+                
+                <!-- Media Section -->
+                <hr>
                     <h2 style="text-align: center;">Media</h2>
                     <hr>
-                    <ul>
-                        <li>
-                            <a href="http://apac.bnpparibas/en/2017/07/18/bnp-paribas-cardif-asia-start-up-challenge-to-rethink-the-customer-relationship-as-insurance-industry-enters-a-new-era/" target="_blank">BNP Paribas Cardif: Asia Start-up Challenge to rethink the customer relationship as insurance industry enters a new era</a>
-                        </li>
-                        <li>
-                            <a href="http://www.icm2014.org/en/vod/public.html" target="_blank">2014 International Congress of Mathematicians Public and Media Relations Award</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="media">
+                        <ul>
+                            <li>
+                                <a href="http://apac.bnpparibas/en/2017/07/18/bnp-paribas-cardif-asia-start-up-challenge-to-rethink-the-customer-relationship-as-insurance-industry-enters-a-new-era/" target="_blank">BNP Paribas Cardif: Asia Start-up Challenge to rethink the customer relationship as insurance industry enters a new era</a>
+                            </li>
+                            <li>
+                                <a href="http://www.icm2014.org/en/vod/public.html" target="_blank">2014 International Congress of Mathematicians Public and Media Relations Award</a>
+                            </li>
+                        </ul>
+                    </div>
             </article>
         </main>
     </div>
-
-</body>
+</body>    
 </html>
