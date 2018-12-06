@@ -31,8 +31,12 @@ a:active {
     font-family: "Lato", sans-serif;
 }
 
-div.UoE {
+div.UoE-logo {
     max-width: 280px;
+}
+
+div.UoE-content {
+    max-width: 100%;
 }
 
 div.profile {
