@@ -63,6 +63,13 @@ div.profile {
     font-size: 22px; /* Increased text to enable scrolling */
     font-size: 100%;
     padding: 0px 10px;
+    max-width: 100%;
+}
+
+div.link {
+    position: relative;
+    left: 230px;
+    top: -180px;
 }
 
 .profile p {
@@ -101,4 +108,11 @@ div.profile {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+ iPhoneX screen resolution 
+@media screen and *(max-width: 375px) {
+    div.sidebar {width: 80px;}
+    h2.head {width: 240px;}
+    
 }
