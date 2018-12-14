@@ -97,6 +97,14 @@ div.link {
     top: -180px;
 }
 
+div.proverb {
+    position: relative;
+    left: 230px;
+    top: -150px;
+    width: 280px;
+    color: #808080;
+}
+
 .profile p {
     margin: 0px;
     float: none;
