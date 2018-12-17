@@ -60,6 +60,10 @@ div.profile {
     max-width: 33.7%;
 }
 
+.fit-long4 {
+    max-width: 30.4%;
+}
+
 .img-circle {
     border-radius: 50%;
     max-width: 100%;   
