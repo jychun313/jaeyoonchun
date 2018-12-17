@@ -57,11 +57,16 @@ div.profile {
 }
 
 .fit-long3 {
-    max-width: 33.7%;
+    max-width: 33.9%;
+    max-height: 33.9%;
 }
 
 .fit-long4 {
     max-width: 30.4%;
+}
+
+.fit-rokarmy {
+    max-width: 30%;
 }
 
 .img-circle {
