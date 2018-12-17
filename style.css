@@ -10,39 +10,12 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: blue;
+    color: crimson;
 }
 
 /* selected link */
 a:active {
     color: blue;
-}
-
-.img-circle {
-    border-radius: 50%;
-    max-width: 100%;   
-}
-
-.img-UoE {
-    max-width: 100%;
-}
-
-.img-tasisengalnd {
-    max-width: 100%;
-    margin-top: -22px;
-    margin-bottom: -10px;
-}
-
-.img-Finotek {
-    max-width: 100%;
-    margin-top: -5px;
-    margin-bottom: -15px;
-}
-
-.img-pwc {
-    max-width: 100%;
-    margin-top: 5px;
-    margin-bottom: -5px;
 }
 
 .body {
@@ -85,6 +58,33 @@ div.profile {
 
 .fit-long3 {
     max-width: 33%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100%;   
+}
+
+.img-UoE {
+    max-width: 100%;
+}
+
+.img-tasisengalnd {
+    max-width: 100%;
+    margin-top: -22px;
+    margin-bottom: -10px;
+}
+
+.img-Finotek {
+    max-width: 100%;
+    margin-top: -5px;
+    margin-bottom: -15px;
+}
+
+.img-pwc {
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: -5px;
 }
 
 .main {
