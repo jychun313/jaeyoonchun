@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* unvisited link */
 a:link {
     color: blue;
@@ -22,11 +26,25 @@ a:active {
     font-family: "Lato", sans-serif;
 }
 
+div.link {
+    position: relative;
+    left: 230px;
+    top: -180px;
+}
+
 div.link a{ padding-right: 0.4em;}
 
 div.profile {
     border: 1 solid #000;
     max-height: 230px;
+}
+
+div.proverb {
+    position: relative;
+    left: 230px;
+    top: -150px;
+    width: 280px;
+    color: #808080;
 }
 
 div.UoE-logo {
@@ -39,6 +57,22 @@ div.UoE-content {
 
 div.profile {
     max-width: 180px;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+/* Container for image text */
+.caption-icm, .caption-rokarmy {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .fit {
@@ -65,14 +99,16 @@ div.profile {
     max-width: 30.4%;
 }
 
-.fit-rokarmy {
-    max-width: 30%;
-}
-
 .img-circle {
     border-radius: 50%;
     max-width: 100%;   
 }
+
+.img-rowICM {
+    position: relative;
+    height: 40px;
+}
+
 
 .img-UoE {
     max-width: 100%;
@@ -104,18 +140,40 @@ div.profile {
     max-width: 100%;
 }
 
-div.link {
-    position: relative;
-    left: 230px;
-    top: -180px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-div.proverb {
-    position: relative;
-    left: 230px;
-    top: -150px;
-    width: 280px;
-    color: #808080;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .profile p {
@@ -125,6 +183,40 @@ div.proverb {
     position: relative;
     left: 210px;
     top: -190px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.icm, .rokarmy {
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Columns side by side */
+.column-icm {
+    float: left;
+    width: 10%;
+}
+.column-rokarmy {
+  float: left;
+  width: 33.33%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.slides-icm {
+    display: none;
+}
+
+.slides-rokarmy {
+    display: none;
 }
 
 .sidenav {
