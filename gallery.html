@@ -25,8 +25,67 @@
                 
                 <br>
                 <hr>
+                    <h2 style="text-align: center;">PricewaterhouseCoopers Korea (Samil PwC)<br><sub>January 2017 - February 2017</sub></h2>
+                <hr>
+                <br>
+                    
+                    <div class="pwckorea" style="width: 40%; float: center; left: 30%;">
+                        <div class="slides-pwckorea">
+                            <div class="numbertext">1 / 5</div>
+                                <img src="img/pwc4.jpg" style="width: 100%">
+                        </div>
+                    
+                        <div class="slides-pwckorea">
+                            <div class="numbertext">2 / 5</div>
+                                <img src="img/pwc5.jpg" style="width: 100%">
+                        </div>
+                        
+                        <div class="slides-pwckorea">
+                            <div class="numbertext">3 / 5</div>
+                                <img src="img/pwc6.jpg" style="width: 100%">
+                        </div>
+                        
+                        <div class="slides-pwckorea">
+                            <div class="numbertext">4 / 5</div>
+                                <img src="img/pwc7.jpg" style="width: 100%">
+                        </div>
+                        
+                        <div class="slides-pwckorea">
+                            <div class="numbertext">5 / 5</div>
+                                <img src="img/pwc8.jpg" style="width: 100%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlidesPwckorea(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlidesPwckorea(1)">&#10095;</a>
+                        
+                        <div class="caption-pwckorea">
+                            <p id="caption-p"></p>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column-pwckorea">
+                                <img class="img-rowPwckorea demo-p cursor" src="img/pwc4.jpg" style="width:100%" onclick="currentSlidePwckorea(1)" alt="Risk Assurance Team">
+                            </div>
+                            <div class="column-pwckorea">
+                                <img class="img-rowPwckorea demo-p cursor" src="img/pwc5.jpg" style="width:100%" onclick="currentSlidePwckorea(2)" alt="Files of Certificate of Internship">
+                            </div>
+                            <div class="column-pwckorea">
+                                <img class="img-rowPwckorea demo-p cursor" src="img/pwc6.jpg" style="width:100%" onclick="currentSlidePwckorea(3)" alt="Completion Risk Assurance Internship!">
+                            </div>
+                            <div class="column-pwckorea">
+                                <img class="img-rowPwckorea demo-p cursor" src="img/pwc7.jpg" style="width:100%" onclick="currentSlidePwckorea(4)" alt="Last day of internship!">
+                            </div>
+                            <div class="column-pwckorea">
+                                <img class="img-rowPwckorea demo-p cursor" src="img/pwc8.jpg" style="width:100%" onclick="currentSlidePwckorea(5)" alt="Meeting with team members!">
+                            </div>
+                         </div>
+                    </div>
+                
+                <br>
+                <hr>
                     <h2 style="text-align: center;">SEOUL ICM 2014 International Congress of Mathematicians<br><sub>June 2014 - August 2014</sub></h2>
                 <hr>
+                <br>
                  
                     <div class="icm" style="width: 40%; float: center; left: 30%;">
                         <div class="slides-icm">
@@ -132,6 +191,7 @@
                 <hr>
                     <h2 style="text-align: center;">ROK Army (interruption of studies)<br><sub>October 2011 - July 2013</sub></h2>
                 <hr>
+                <br>
                     
                     <div class="rokarmy" style="width: 40%; float: center; left: 30%;">
                         <div class="slides-rokarmy">
@@ -158,13 +218,13 @@
                         
                         <div class="row">
                             <div class="column-rokarmy">
-                                <img class="demo-r cursor" src="img/ROKArmy1.png" style="width:100%" onclick="currentSlideRokarmy(1)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (1)">
+                                <img class="img-rowRokarmy demo-r cursor" src="img/ROKArmy1.png" style="width:100%" onclick="currentSlideRokarmy(1)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (1)">
                             </div>
                             <div class="column-rokarmy">
-                                <img class="demo-r cursor" src="img/ROKArmy2.png" style="width:100%" onclick="currentSlideRokarmy(2)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (2)">
+                                <img class="img-rowRokarmy demo-r cursor" src="img/ROKArmy2.png" style="width:100%" onclick="currentSlideRokarmy(2)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (2)">
                             </div>
                             <div class="column-rokarmy">
-                                <img class="demo-r cursor" src="img/ROKArmy3.png" style="width:100%" onclick="currentSlideRokarmy(3)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (3)">
+                                <img class="img-rowRokarmy demo-r cursor" src="img/ROKArmy3.png" style="width:100%" onclick="currentSlideRokarmy(3)" alt="12-2 ROK-US CJCMEC EXERCISE '12.11.5~9 (3)">
                             </div>
                          </div>
                     </div>
@@ -173,6 +233,38 @@
     </div>
 
 <script>
+    var slideIndexPwckorea = 1;
+    showSlidesPwckorea(slideIndexPwckorea);
+
+    // Next/previous controls
+    function plusSlidesPwckorea(n) {
+    showSlidesPwckorea(slideIndexPwckorea += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlidePwckorea(n) {
+    showSlidesPwckorea(slideIndexPwckorea = n);
+    }
+    
+    function showSlidesPwckorea(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides-pwckorea");
+        var dots = document.getElementsByClassName("demo-p");
+        var captionText = document.getElementById("caption-p");
+        if (n > slides.length) {slideIndexPwckorea = 1}
+        if (n < 1) {slideIndexPwckorea = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexPwckorea-1].style.display = "block";
+        dots[slideIndexPwckorea-1].className += " active";
+        captionText.innerHTML = dots[slideIndexPwckorea-1].alt;
+    }
+    
+    
     var slideIndexRokarmy = 1;
     showSlidesRokarmy(slideIndexRokarmy);
 

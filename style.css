@@ -64,7 +64,7 @@ div.profile {
 }
 
 /* Container for image text */
-.caption-icm, .caption-rokarmy {
+.caption-pwckorea, .caption-icm, .caption-rokarmy {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
@@ -104,11 +104,10 @@ div.profile {
     max-width: 100%;   
 }
 
-.img-rowICM {
+.img-rowPwckorea, .img-rowICM, .img-rowRokarmy {
     position: relative;
     height: 40px;
 }
-
 
 .img-UoE {
     max-width: 100%;
@@ -186,7 +185,7 @@ div.profile {
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.icm, .rokarmy {
+.pwckorea, .icm, .rokarmy {
   position: relative;
 }
 
@@ -197,6 +196,10 @@ div.profile {
 }
 
 /* Columns side by side */
+.column-pwckorea {
+    float: left;
+    width: 20%
+}
 .column-icm {
     float: left;
     width: 9.09%;
@@ -209,6 +212,10 @@ div.profile {
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+}
+
+.slides-pwckorea {
+    display: none;
 }
 
 .slides-icm {
