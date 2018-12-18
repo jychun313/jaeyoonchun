@@ -64,7 +64,7 @@ div.profile {
 }
 
 /* Container for image text */
-.caption-pwckorea, .caption-icm, .caption-rokarmy {
+.caption-finotek, .caption-pwckorea, .caption-icm, .caption-rokarmy {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
@@ -104,7 +104,7 @@ div.profile {
     max-width: 100%;   
 }
 
-.img-rowPwckorea, .img-rowICM, .img-rowRokarmy {
+.img-rowFinotek, .img-rowPwckorea, .img-rowICM, .img-rowRokarmy {
     position: relative;
     height: 40px;
 }
@@ -185,7 +185,7 @@ div.profile {
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.pwckorea, .icm, .rokarmy {
+.finotek, .pwckorea, .icm, .rokarmy {
   position: relative;
 }
 
@@ -196,6 +196,10 @@ div.profile {
 }
 
 /* Columns side by side */
+.column-finotek {
+    float: left;
+    width: 5.88%
+}
 .column-pwckorea {
     float: left;
     width: 20%
@@ -214,15 +218,7 @@ div.profile {
   opacity: 0.6;
 }
 
-.slides-pwckorea {
-    display: none;
-}
-
-.slides-icm {
-    display: none;
-}
-
-.slides-rokarmy {
+.slides-finotek, .slides-pwckorea, .slides-icm, .slides-rokarmy {
     display: none;
 }
 
