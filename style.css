@@ -22,10 +22,6 @@ a:active {
     color: blue;
 }
 
-.body {
-    font-family: "Lato", sans-serif;
-}
-
 div.link {
     position: relative;
     left: 230px;
@@ -59,20 +55,31 @@ div.profile {
     max-width: 180px;
 }
 
+/*
+h2 {
+    width: 880px;
+}
+*/
+
+.body {
+    font-family: "Lato", sans-serif;
+}
+
 .active, .demo:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Container for image text */
 .caption-finotek, .caption-pwckorea, .caption-icm, .caption-rokarmy {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    width: 300px;
 }
 
 .cursor {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .fit {
@@ -101,7 +108,7 @@ div.profile {
 
 .img-circle {
     border-radius: 50%;
-    max-width: 100%;   
+    max-width: 180px;   
 }
 
 .img-rowFinotek, .img-rowPwckorea, .img-rowICM, .img-rowRokarmy {
@@ -113,9 +120,9 @@ div.profile {
     max-width: 100%;
 }
 
-.img-tasisengalnd {
+.img-tasisengland {
     max-width: 100%;
-    margin-top: -22px;
+    margin-top: -15px;
     margin-bottom: -10px;
 }
 
@@ -123,6 +130,12 @@ div.profile {
     max-width: 100%;
     margin-top: -5px;
     margin-bottom: -15px;
+}
+
+.img-ofs {
+    max-width: 100%;
+    margin-top:-5px;
+    margin-bottom: -5px;
 }
 
 .img-pwc {
@@ -185,8 +198,14 @@ div.profile {
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.finotek, .pwckorea, .icm, .rokarmy {
-  position: relative;
+.finotek-gallery, .pwckorea-gallery, .icm-gallery, .rokarmy-gallery {
+    position: relative;
+    width: 300px;
+    margin: 0px;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row:after {
@@ -246,12 +265,117 @@ div.profile {
     color: #C0C0C0;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+/* display resolution - Mobile S 320px */
+@media screen and (max-width: 320px) {
+    body.page { max-width: 314px; }
+    article.art { width: 300px; font-size: x-small; }
+    div.link { left: 120px; top: -65px; }
+    div.main { margin-left: 80px; width: 280px; }
+    div.proverb { left: auto; top: auto; width: 159px; }
+    hr { width: 100%; position: relative; left: -9px; }
+    .img-circle { width: 50%; }
+    .img-UoE { max-width: 150px; }
+    .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
+    .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
+    .sidenav { width: 80px; position: fixed; }
+    .sidenav a { font-size: 13px; }
+    .finotek-gallery, .img-finotek-gallery, .caption-finotek { max-width: 200px; font-size: 7px;}
+    .pwckorea-gallery, .img-pwc-gallery, .caption-pwckorea { max-width: 200px; font-size: 7px; }
+    .icm-gallery, .img-icm-gallery, .caption-icm { max-width: 200px; font-size: 7px; }
+    .rokarmy-gallery, .img-rokarmy-gallery, .caption-rokarmy { max-width: 200px; font-size: 7px; }
+    .h2-gallery { font-size: small; }
 }
 
-@media screen and (max-width: 600px) {
-    body.page { max-width: 600px; }
-    article.art { width: 600px; }
+/* display resolution - Mobile M iphone 6/7/8 and iphone x */
+@media screen and (max-width: 375px) {
+    body.page { max-width: 275px; }
+    article.art { width: 258px; font-size: x-small; }
+    div.link { left: 120px; top: -65px; }
+    div.main { margin-left: 80px; width: 280px; }
+    div.proverb { left: auto; top: auto; width: 159px; }
+    hr { width: 100%; position: relative; left: -9px; }
+    .img-circle { width: 50%; }
+    .img-UoE { max-width: 150px; }
+    .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
+    .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
+    .sidenav { width: 80px; position: fixed; }
+    .sidenav a { font-size: 13px; }
+    .finotek-gallery, .img-finotek-gallery, .caption-finotek { max-width: 200px; font-size: 7px;}
+    .pwckorea-gallery, .img-pwc-gallery, .caption-pwckorea { max-width: 200px; font-size: 7px; }
+    .icm-gallery, .img-icm-gallery, .caption-icm { max-width: 200px; font-size: 7px; }
+    .rokarmy-gallery, .img-rokarmy-gallery, .caption-rokarmy { max-width: 200px; font-size: 7px; }
+    .h2-gallery { font-size: small; }
+}
+
+/* display resolution - iphone 6/7/8 plus */
+@media screen and (max-width: 414px) {
+    body.page { max-width: 314px; }
+    article.art { width: 300px; font-size: x-small; }
+    div.link { left: 120px; top: -65px; }
+    div.main { margin-left: 80px; width: 280px; }
+    div.proverb { left: auto; top: auto; width: 159px; }
+    hr { width: 100%; position: relative; align: center; }
+    .img-circle { width: 50%; }
+    .img-UoE { max-width: 150px; }
+    .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
+    .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
+    .sidenav { width: 80px; position: fixed; }
+    .sidenav a { font-size: 13px; }
+    .finotek-gallery, .img-finotek-gallery, .caption-finotek { max-width: 200px; font-size: 7px;}
+    .pwckorea-gallery, .img-pwc-gallery, .caption-pwckorea { max-width: 200px; font-size: 7px; }
+    .icm-gallery, .img-icm-gallery, .caption-icm { max-width: 200px; font-size: 7px; }
+    .rokarmy-gallery, .img-rokarmy-gallery, .caption-rokarmy { max-width: 200px; font-size: 7px; }
+    .h2-gallery { font-size: small; }
+}
+
+/* display resolution - 425*734 */
+@media screen and (max-width: 425px) {
+    body.page { max-width: 314px; }
+    article.art { width: 300px; font-size: x-small; }
+    div.link { left: 120px; top: -65px; }
+    div.main { margin-left: 80px; width: 280px; }
+    div.proverb { left: auto; top: auto; width: 159px; }
+    hr {width: 100%; position: relative; align: center;}
+    .img-circle { width: 50%; }
+    .img-UoE { max-width: 150px; }
+    .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
+    .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
+    .sidenav { width: 80px; position: fixed; }
+    .sidenav a { font-size: 13px; }
+    .finotek-gallery, .img-finotek-gallery, .caption-finotek { max-width: 200px; font-size: 7px;}
+    .pwckorea-gallery, .img-pwc-gallery, .caption-pwckorea { max-width: 200px; font-size: 7px; }
+    .icm-gallery, .img-icm-gallery, .caption-icm { max-width: 200px; font-size: 7px; }
+    .rokarmy-gallery, .img-rokarmy-gallery, .caption-rokarmy { max-width: 200px; font-size: 7px; }
+    .h2-gallery { font-size: small; }
+}
+
+/* display resolution - 1440 */
+@media screen and (min-width: 1440px) {
+    body.page { min-width: 314px; }
+    article.art { width: 300px; font-size: x-small; }
+    div.link { left: 120px; top: -65px; }
+    div.main { margin-left: 80px; width: 280px; }
+    div.proverb { left: auto; top: auto; width: 159px; }
+    hr {width: 100%; position: relative; align: center;}
+    .img-circle { width: 50%; }
+    .img-UoE { max-width: 150px; }
+    .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
+    .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
+    .sidenav { width: 80px; position: fixed; }
+    .sidenav a { font-size: 13px; }
+    .finotek-gallery, .img-finotek-gallery, .caption-finotek { max-width: 200px; font-size: 7px;}
+    .pwckorea-gallery, .img-pwc-gallery, .caption-pwckorea { max-width: 200px; font-size: 7px; }
+    .icm-gallery, .img-icm-gallery, .caption-icm { max-width: 200px; font-size: 7px; }
+    .rokarmy-gallery, .img-rokarmy-gallery, .caption-rokarmy { max-width: 200px; font-size: 7px; }
+    .h2-gallery { font-size: small; }
 }
