@@ -251,9 +251,7 @@ div.profile {
     .sidenav a {font-size: 18px;}
 }
 
- iPhoneX screen resolution 
-@media screen and *(max-width: 375px) {
-    div.sidebar {width: 80px;}
-    h2.head {width: 240px;}
-    
+@media screen and (max-width: 600px) {
+    body.page { max-width: 600px; }
+    article.art { width: 600px; }
 }
