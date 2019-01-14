@@ -132,6 +132,12 @@ h2 {
     margin-bottom: -15px;
 }
 
+.img-i-screamedu {
+    max-width: 100%;
+    margin-top: -5px;
+    margin-bottom: -15px;
+}
+
 .img-ofs {
     max-width: 100%;
     margin-top:-5px;
@@ -277,6 +283,7 @@ h2 {
     .img-UoE { max-width: 150px; }
     .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
     .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-i-screamedu { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
     .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
     .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
     .sidenav { width: 80px; position: fixed; }
@@ -300,6 +307,7 @@ h2 {
     .img-UoE { max-width: 150px; }
     .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
     .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-i-screamedu { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
     .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
     .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
     .sidenav { width: 80px; position: fixed; }
@@ -323,6 +331,7 @@ h2 {
     .img-UoE { max-width: 150px; }
     .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
     .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
+    .img-i-screamedu { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
     .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
     .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
     .sidenav { width: 80px; position: fixed; }
@@ -370,6 +379,7 @@ h2 {
     .img-tasisengland { max-width: 150px; margin-top: -8px; margin-bottom: 0px; }
     .img-ofs { max-width: 100px; margin-top: -3px; margin-bottom: 3px; }
     .img-Finotek { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
+    .img-i-screamedu { max-width: 100px; margin-top: -4px; margin-bottom: -5px; }
     .img-pwc { max-width: 50px;margin-top: 0px; margin-bottom: 0px; }
     .sidenav { width: 80px; position: fixed; }
     .sidenav a { font-size: 13px; }
